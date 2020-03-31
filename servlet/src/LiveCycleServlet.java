@@ -5,10 +5,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/")
-public class MainServlet extends HttpServlet {
+@WebServlet("/livecycle")
+public class LiveCycleServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().write("Main");
+        String s = "<h1>Live Cycle</h1>";
+        resp.getWriter().write(s);
     }
 }
